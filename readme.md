@@ -1,5 +1,7 @@
 # Local File Drill
 
+** Query the contents of your files with SQL **
+
 This project leverages a containerized version of Apache Drill https://drill.apache.org/ to query your CSV / Excel files... and MORE with SQL! Drop your files in the `data` folder then query them like they are database tables.
 
 ### What is Drill?
