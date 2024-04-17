@@ -1,0 +1,19 @@
+version: "3"
+
+services:
+  drill:
+    build: .
+    image: apache/drill:1.21.1
+    hostname: drill
+
+    command: /bin/bash
+    tty: true
+    ports:
+    - "8047:8047"
+    - "31010:31010"
+    ulimits:
+      memlock: -1
+      nproc: 32768
+      nofile: 100000
+    volumes: 
+      - ./data:/data
